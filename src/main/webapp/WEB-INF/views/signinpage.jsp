@@ -9,17 +9,21 @@
 	</div>
 	
 	<div class="signin" >
-	<form >
+	<form action="./shoppingpage" method="POST">
+		<p>${success}</p>
 	<h1 style="font-family:Arial;font-size:28px">Sign in</h1>
 	
 	<label><b>Email or mobile phone number</b></label><br><input type="text" name="email_mobile" style="height:31px;width:260px">
 	<br>
 	<br>
-	<button type="submit" id="button_continue" >Continue</button>
+	<label><b>Password</b></label><br><input type="text" name="password" style="height:31px;width:260px">
+	<br>
+	<br>
+	<a href="./continue"><button type="submit" id="button_continue" >Continue</button>
 	<br>
 	<p>By continuing, you agree to Amazon's Conditions of <br>Use and Privacy Notice.</p>
-	<p style="color:grey">______________ <sub>New to Amazon?</sub> _____________</p>
-	<button type="submit" id="button_account">Create your Amazon account</button>
+	<p >______________ <sub>New to Amazon?</sub> _____________</p>
+	<a href="./createaccount"><button type="button" id="button_account">Create your Amazon account</button></a>
 
     </form>
 	</div>
